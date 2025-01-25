@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Tracker</title>
+  <link rel="stylesheet" href="/home/rgukt/Budget Tracker.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Budget Tracker</h1>
+    <div class="balance">
+      <h2>Your Balance</h2>
+      <h3 id="balance">$0.00</h3>
+    </div>
+    <div class="summary">
+      <div>
+        <h4>Income</h4>
+        <p id="income" class="money positive">$0.00</p>
+      </div>
+      <div>
+        <h4>Expense</h4>
+        <p id="expense" class="money negative">$0.00</p>
+      </div>
+    </div>
+    <div class="form">
+      <h3>Add Transaction</h3>
+      <form id="transaction-form">
+        <input type="text" id="description" placeholder="Enter description" required>
+        <input type="number" id="amount" placeholder="Enter amount (+income, -expense)" required>
+        <button type="submit">Add Transaction</button>
+      </form>
+    </div>
+    <div class="transactions">
+      <h3>History</h3>
+      <ul id="transaction-list"></ul>
+    </div>
+  </div>
+  <script src="/home/rgukt/Budget Tracker.js"></script>
+</body>
+</html>
+
